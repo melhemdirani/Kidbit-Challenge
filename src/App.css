@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-}
+  }
 select:focus {
   outline: none;
   border: 4px solid #3584A7 
@@ -22,17 +22,6 @@ select {
   background: url(/src/images/select.svg) no-repeat 95.5% ;
   -webkit-appearance: none;
 }
-@media only screen and (max-width: 599px) {
-  select {
-    width: 309px;
-    height: 32px;
-    border-radius: 5px;
-    font-size: 15px;
-    line-height: 18px;
-    padding-left: 12px;
-    background: url(/src/images/select_mobile.svg) no-repeat 95.5% ;
-  }
-}
 .primary_button{
   font-size: 25px;
   line-height: 30px;
@@ -46,4 +35,31 @@ select {
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor:pointer;
+}
+@media only screen and (max-width: 1120px) {
+  .App {
+    width: 1112px;
+ }
+ 
+}
+@media only screen and (max-width: 599px) {
+  select {
+    width: 309px;
+    height: 32px;
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 18px;
+    padding-left: 12px;
+    background: url(/src/images/select_mobile.svg) no-repeat 95.5% ;
+  }
+  .App{
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  select {
+    width: 250px;
+  }
+ 
 }

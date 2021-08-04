@@ -13,7 +13,6 @@ const styles = theme => ({
         flexDirection: "column",
         alignItems:"center",
         width: "598px",
-        height: "939px",
         marginLeft: "46px",
         marginTop: "53px"
     },
@@ -157,6 +156,26 @@ const styles = theme => ({
         formContainer:{
             rowGap: "9px"
         },
+    },
+    [theme.breakpoints.down('321')]: {
+        inputs:{
+            width: "250px"
+        },
+        time:{
+            width: "250px"
+        },
+        Labels:{
+           fontSize: "14px" 
+        },
+        container:{
+            marginLeft: "30px"
+        },
+        caption:{
+           width: "250px"
+        }, 
+        options:{
+            width: "50px"
+        }
     }
 });
 
@@ -174,12 +193,9 @@ class ContactForm extends React.Component {
         moveName: true
         };
     }
-
     handleChange = event => {
         const { name, value } = event.target;
-
         this.setState({ [name]: value });
-        console.log(this.state.time)
     };
     handleSubmit =  event => {
         event.preventDefault();

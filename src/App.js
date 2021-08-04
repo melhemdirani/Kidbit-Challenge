@@ -12,7 +12,7 @@ function App() {
       {click ?
      <PopUp toggle={toggle}/>
      :
-     <button onClick={() => toggle(true)} className="primary_button">Click ME</button>
+     <button onClick={() => toggle(true)} className="primary_button">Click Me</button>
       }
     </div>
   );

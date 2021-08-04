@@ -64,11 +64,14 @@ const useStyles = makeStyles((theme) => ({
       width: "361px",
     },
     escapeIcon:{
-      margin: "7px 9px 0 auto",
       height: "33px",
       width: "33px"
     },
   },
+  [theme.breakpoints.down('320')]: {
+    escapeIcon:{
+    },
+  }
 }))
 
     
