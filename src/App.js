@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import React , {useState} from 'react'
 import './App.css';
+import PopUp from './components/PopUp';
 
 function App() {
+  const [click, setClick] = useState(false)
+  const toggle = (a) => {
+    setClick(a)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {click ?
+     <PopUp toggle={toggle}/>
+     :
+     <button onClick={() => toggle(true)} className="primary_button">Click ME</button>
+      }
     </div>
   );
 }

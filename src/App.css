@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  font-family: 'Lato', sans-serif;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100vh;
+}
+select:focus {
+  outline: none;
+  border: 4px solid #3584A7 
+}
+select {
+  width: 510px;
+  height: 52px;
+  padding-left: 20px;
+  color: rgba(0,0,0,0.5);
+  font-size: 25px;
+  line-height: 30px;
+  border: 2px solid #979797;
+  border-radius: 10px;
+  background: url(/src/images/select.svg) no-repeat 95.5% ;
+  -webkit-appearance: none;
+}
+@media only screen and (max-width: 599px) {
+  select {
+    width: 309px;
+    height: 32px;
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 18px;
+    padding-left: 12px;
+    background: url(/src/images/select_mobile.svg) no-repeat 95.5% ;
+  }
+}
+.primary_button{
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 900;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  width: 204px;
+  height: 51px;
+  margin-bottom:8px;
+  background: linear-gradient(90deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+  border-radius: 100px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor:pointer;
 }
