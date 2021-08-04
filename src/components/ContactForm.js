@@ -20,7 +20,6 @@ const styles = theme => ({
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        rowGap: "20px"
     },
     options:{
         cursor: "pointer",
@@ -70,7 +69,8 @@ const styles = theme => ({
     },
     forms:{
         display: "flex",
-        flexDirection: "column"
+        flexDirection: "column",
+        marginBottom: "20px"
     },
     title:{
         fontSize: "45px",
@@ -152,10 +152,9 @@ const styles = theme => ({
             margin: "0",
             marginTop: "45px"
         },
-
-        formContainer:{
-            rowGap: "9px"
-        },
+        forms:{
+          marginBottom: "9px"
+        }
     },
     [theme.breakpoints.down('321')]: {
         inputs:{
